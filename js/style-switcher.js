@@ -14,9 +14,12 @@ const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color) {
   alternateStyles.forEach((style) => {
     if (color === style.getAttribute("title")) {
+      document
+        .querySelector(".main-color")
+        .setAttribute("href", style.getAttribute("title"));
       style.removeAttribute("disabled");
     } else {
-      setTimeout(style.setAttribute("disabled", "true"), 500);
+      style.setAttribute("disabled", "true"), 500;
     }
   });
 }
