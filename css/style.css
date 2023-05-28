@@ -49,6 +49,9 @@ body {
 .section.back-section {
     z-index: 1;
 }
+.alternate-style {
+    transition: color 0.3s ease;
+}
 .section.active {
     z-index: 2;
     opacity: 1;
